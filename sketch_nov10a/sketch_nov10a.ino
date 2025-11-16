@@ -219,7 +219,7 @@ void loop() {
       
       unsigned long holdStart = millis();
       bool stillHeld = true;
-      
+      //Timer protected
       while (millis() - holdStart < 3000) {
         if (digitalRead(BTN_RESET_VOTES) == HIGH) {
           stillHeld = false;
